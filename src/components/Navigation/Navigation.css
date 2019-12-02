@@ -1,0 +1,27 @@
+.nav {
+    grid-area: n;
+    background-color: rgb(172, 110, 110);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 210px;
+  }
+
+  .item {
+      color: white;
+  }
+
+
+.item a{
+    color: white;
+    display: block;
+    height: 50px;
+    padding:0 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.item a:hover{
+    background: #a7a5a5;
+}

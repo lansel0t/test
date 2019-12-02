@@ -1,20 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Navigation from './components/Navigation/Navigation';
+import Headcontent from './components/Headpage/Headpage';
+import Login from './components/Login/Login';
+import {Route} from "react-router-dom";
+import {BrowserRouter} from "react-router-dom";
+import Profile from './components/Profile/Profile';
+import Information from './components/Info/Info';
+
+
+
+
+
+
 
 const App = () => {
   return (
-    <div className="App">
-      <nav>
-        <ul>
-          <li><a href="">Главная</a></li>
-          <li><a href="" >Авторизация</a></li>
-          <li><a href="">Профиль</a></li>
-          <li><a href="inf.html">Информация</a></li>
-        </ul>
-      </nav>
+    <BrowserRouter>
+    <div className='app-wrapper'>
+      <Header />
+      <Navigation />
+      <div class='app-wrapper-content'>
+        <Route path='/Headpage' component={Headcontent}/>
+        <Route path='/Login' component={Login}/>
+        <Route path='/Profile' component={Profile}/>
+        <Route path='/Info' component={Information}/>
+      </div>
     </div>
-  );
+    
+        <header>
+          
+        </header>
+
+
+    </BrowserRouter>);
 }
 
 export default App;
+
+
+
+
+

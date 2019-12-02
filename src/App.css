@@ -1,40 +1,21 @@
-nav {
-  width: 960px;
+.app-wrapper {
   margin: 0 auto;
+  display: grid;
+  width: 1200px;
+  
+ grid-template-areas: 
+ "h h"
+ "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  /* grid-gap: 10px; */
 }
 
-nav ::before {
-  content: '';
-  display: block;
-  height: 50px;
-  width: 100%;
-  background: rgb(66, 66, 66);
-  position: absolute;
-  left:0;
-  z-index: -1;
+.app-wrapper-content {
+
+    grid-area: c;
+    
+
 }
 
-ul{
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  height: 50px;
-}
 
-ul li{
-  float: left;
-}
-
-ul li a{
-  color: white;
-  display: block;
-  height: 50px;
-  padding:0 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 50px;
-}
-
-ul li a:hover{
-background: #a7a5a5;
-}
