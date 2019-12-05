@@ -1,4 +1,4 @@
-.Login {
+.text {
     grid-area: c;
     align-items: center;
     justify-content: center;
@@ -6,16 +6,18 @@
     width: 100%;
 }
 
-.Login h1 {
-    color: rgb(0, 0, 0);
+.text h1 {
+    color: rgb(3, 3, 3);
     text-align: center;
 }
 
-.LoginForm {
-margin-left: 25%;
-    width: 500px;
+.avtorize {
+    
+    margin-left: 38%;
+    width: 200px;
     background: #eee;
     box-shadow: 2px 2px 2px  rgba(0, 0, 0, .5);
     padding: 15px;
     border-radius: 5px;
 }
+

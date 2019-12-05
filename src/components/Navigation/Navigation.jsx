@@ -15,6 +15,9 @@ const Navigation = () => {
     <div className='item'>
       <a href="/Info">Информация</a>
     </div>
+    <div className='item'>
+      <a href="/Calendar">Календарь</a>
+    </div>
   </nav>
 }
 export default Navigation;

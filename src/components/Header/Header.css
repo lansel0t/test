@@ -8,3 +8,7 @@
     margin-left: 5%;
     width: 80px;
   }
+
+  .loginBlock {
+    float: right; 
+  }
